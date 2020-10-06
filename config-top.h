@@ -62,8 +62,7 @@
 
 /* The default value of the PATH variable. */
 #ifndef DEFAULT_PATH_VALUE
-#define DEFAULT_PATH_VALUE \
-  "/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:."
+#define DEFAULT_PATH_VALUE "~/apps/bin:/apps/bin:/usr/bin:/usr/sbin:."
 #endif
 
 /* If you want to unconditionally set a value for PATH in every restricted
@@ -74,11 +73,11 @@
    the Posix.2 confstr () function, or CS_PATH define are not present. */
 #ifndef STANDARD_UTILS_PATH
 #define STANDARD_UTILS_PATH \
-  "/bin:/usr/bin:/sbin:/usr/sbin:/etc:/usr/etc"
+  "/bin:/usr/bin:/sbin:/usr/sbin:/etc:/usr/etc:/apps/bin:/apps/etc"
 #endif
 
 /* Default primary and secondary prompt strings. */
-#define PPROMPT "\\s-\\v\\$ "
+#define PPROMPT "(rlxos)\\s-\\v\\$ "
 #define SPROMPT "> "
 
 /* Undefine this if you don't want the ksh-compatible behavior of reprinting
@@ -88,7 +87,7 @@
 #define KSH_COMPATIBLE_SELECT
 
 /* Default interactive shell startup file. */
-#define DEFAULT_BASHRC "~/.bashrc"
+#define DEFAULT_BASHRC "~/config/bashrc"
 
 /* System-wide .bashrc file for interactive shells. */
 /* #define SYS_BASHRC "/etc/bash.bashrc" */
